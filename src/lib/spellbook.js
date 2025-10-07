@@ -1,4 +1,4 @@
-export const spells = {
+export const spellbook = {
 	'Blinding Flash': {
 		icon: '💥',
 		description:
@@ -8,6 +8,6 @@ export const spells = {
 	'Jagged Shard': {
 		icon: '🔪',
 		description: 'A sharpened piece of stone, honed by a cutting wind. An echo weaponized.',
-		tags: ['stone', 'sharp', 'lethal']
+		tags: ['stone', 'force', 'sharp', 'lethal']
 	}
 };

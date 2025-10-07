@@ -1,4 +1,4 @@
 export const rules = [
 	{ requires: ['energy', 'air'], produces: 'Blinding Flash' },
-	{ requires: ['stone', 'force`'], produces: 'Jagged Shard' }
+	{ requires: ['stone', 'force'], produces: 'Jagged Shard' }
 ];
