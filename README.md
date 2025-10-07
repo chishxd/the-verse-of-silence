@@ -37,7 +37,7 @@ To run this project on your own machine, follow these steps:
 
 ```bash
 # Clone the repository from GitHub
-git clone https://github.com/your-username/the-verse-of-silence.git
+git clone https://github.com/chishxd/the-verse-of-silence.git
 
 # Navigate into the project directory
 cd the-verse-of-silence
