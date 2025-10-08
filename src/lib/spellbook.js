@@ -1,3 +1,9 @@
+/**
+ * @typedef {Object} Spell
+ * @property {string} icon
+ * @property {string} description
+ * @property {string[]} tags
+ */
 export const spellbook = {
 	'Blinding Flash': {
 		icon: '💥',
@@ -9,5 +15,10 @@ export const spellbook = {
 		icon: '🔪',
 		description: 'A sharpened piece of stone, honed by a cutting wind. An echo weaponized.',
 		tags: ['stone', 'force', 'sharp', 'lethal']
+	},
+	'Soothing Water': {
+		icon: '💧',
+		description: 'A gentle splash of calming water.',
+		tags: ['water', 'restorative', 'non-lethal']
 	}
 };
