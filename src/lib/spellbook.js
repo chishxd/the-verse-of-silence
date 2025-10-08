@@ -1,8 +1,17 @@
 /**
+ * @file Defines all the craftable spells in the game.
+ */
+
+/**
  * @typedef {Object} Spell
  * @property {string} icon
  * @property {string} description
  * @property {string[]} tags
+ */
+
+/**
+ * A dictionary of all spells in the game.
+ * The key is the spell's name.
  */
 export const spellbook = {
 	'Blinding Flash': {

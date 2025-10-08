@@ -1,4 +1,8 @@
 <script>
+	/**
+	 * @file This is the main page of the application.
+	 * It currently serves as a placeholder and a testbed for engine functions.
+	 */
 	import { combine, useSpell } from '$lib/engine.js';
 </script>
 
