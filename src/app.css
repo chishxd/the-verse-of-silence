@@ -7,13 +7,23 @@
 }
 
 @layer components {
-	.lvl2 {
+	.pixel-frame {
 		box-shadow:
-			8px 0 #feb900,
-			-8px 0 #feb900,
-			0 -8px #feb900,
-			0 8px #feb900,
-			0 0 0 4px #feb900;
+			8px 0 var(--frame-color, theme('colors.stone.500')),
+			-8px 0 var(--frame-color, theme('colors.stone.500')),
+			0 -8px var(--frame-color, theme('colors.stone.500')),
+			0 8px var(--frame-color, theme('colors.stone.500')),
+			0 0 0 4px var(--frame-color, theme('colors.stone.500'));
 		margin: 8px auto;
+		background-color: theme('colors.stone.900');
+	}
+	.frame-amber {
+		--frame-color: theme('colors.amber.400');
+	}
+	.frame-subdued {
+		--frame-color: theme('colors.stone.600');
+	}
+	.frame-creature {
+		--frame-color: theme('colors.blue.500');
 	}
 }
