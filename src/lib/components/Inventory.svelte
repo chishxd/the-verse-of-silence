@@ -18,8 +18,7 @@
 		<div
 			class="pixel-frame frame-amber flex flex-col items-center justify-center bg-stone-800 p-4 text-center transition-transform hover:scale-110"
 		>
-			<p class="text-xl">{item.icon}</p>
-			<p class="mt-2 font-serif text-lg">{name}</p>
+			<p class="mt-1 font-serif text-sm">{item.icon} {name}</p>
 		</div>
 	{/each}
 </section>

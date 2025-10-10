@@ -26,4 +26,7 @@
 	.frame-creature {
 		--frame-color: theme('colors.blue.500');
 	}
+	.frame-wood {
+		--frame-color: theme('colors.yellow.700');
+	}
 }

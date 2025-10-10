@@ -14,16 +14,23 @@
 </script>
 
 <!-- The Top level container -->
-<main
-	class="flex min-h-screen flex-col items-center justify-between bg-stone-900 p-4 font-serif text-white sm:p-8"
+<div
+	class="fixed inset-0 z-[-1] bg-cover bg-center"
+	style="background-image: url('/assets/backgrounds/cave.png');"
 >
-	<!-- The container for game (So that game doesn't get "too wide" on wide screens) -->
-	<div class="mx-auto flex w-full max-w-4xl flex-col gap-8">
-		<CreatureDisplay creature={glimmerkin} />
+	<!-- <div class="absolute inset-0 bg-stone-950/70"></div> -->
+	<main
+		class="flex min-h-screen flex-col items-center justify-between p-4 font-serif text-white sm:p-8"
+	>
+		<!-- The container for game (So that game doesn't get "too wide" on wide screens) -->
+		<div class="mx-auto flex w-full max-w-4xl flex-col gap-8">
+			<!-- CraftingAltar, CreatureDisplay and Inventory goes here -->
+			<CreatureDisplay creature={glimmerkin} />
+		</div>
+
+		<!-- Right Column: Crafting & Inventory -->
 
 		<CraftingAltar />
-
 		<Inventory items={elements} />
-		<!-- CraftingAltar, CreatureDisplay and Inventory goes here -->
-	</div>
-</main>
+	</main>
+</div>
