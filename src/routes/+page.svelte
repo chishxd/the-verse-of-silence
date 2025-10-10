@@ -1,5 +1,4 @@
 <script>
-	import { creatures } from '$lib/creatures';
 	/**
 	 * @file This is the main page of the application.
 	 * It currently serves as a placeholder and a testbed for engine functions.
@@ -9,6 +8,7 @@
 	import CreatureDisplay from '$lib/components/CreatureDisplay.svelte';
 	import CraftingAltar from '$lib/components/CraftingAltar.svelte';
 	import { elements } from '$lib/elements';
+	import { creatures } from '$lib/creatures';
 
 	const glimmerkin = creatures['Glimmerkin'];
 </script>
