@@ -28,8 +28,6 @@
 			<CreatureDisplay creature={glimmerkin} />
 		</div>
 
-		<!-- Right Column: Crafting & Inventory -->
-
 		<CraftingAltar />
 		<Inventory items={elements} />
 	</main>

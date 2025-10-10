@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Press+Start+2P&display=swap');
 @import 'tailwindcss';
 
 @theme {
 	--font-pixel: 'Press Start 2P', sans-serif;
+	--font-almendra: 'Almendra', serif;
 	--font-serif: 'Cormorant Garamond', serif;
 }
 
