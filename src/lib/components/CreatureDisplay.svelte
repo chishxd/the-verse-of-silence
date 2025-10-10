@@ -3,7 +3,11 @@
 </script>
 
 <section
+	role="group"
 	class="pixel-frame frame-creature flex w-full flex-row border border-gray-700 bg-stone-800 p-6"
+	ondragover={(event) => {
+		event.preventDefault();
+	}}
 >
 	<img src={creature.image} alt={creature.name} class="h-32 w-32 flex-shrink-0 object-contain" />
 
