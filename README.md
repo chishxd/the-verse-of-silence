@@ -1,18 +1,35 @@
 # The Verse of Silence
 
+<div align="center">
+
 ## 🚀 Play Now!
 
 [**Play The Verse of Silence live on Vercel!**](https://the-verse-of-silence.vercel.app/)
 
 > _"Do not be deceived by the Silence. The true Verse still lingers, and its last pure note is hummed by the Glimmerkin."_
 
+### Made For
+
 ![Hack Club Badge](https://img.shields.io/badge/Hack%20Club-EC3750?logo=hackclub&logoColor=fff&style=for-the-badge)
 
-![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=for-the-badge)![Svelte Badge](https://img.shields.io/badge/Svelte-FF3E00?logo=svelte&logoColor=fff&style=for-the-badge)
+### Built With
+
+![Svelte Badge](https://img.shields.io/badge/Svelte-FF3E00?logo=svelte&logoColor=fff&style=for-the-badge)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=for-the-badge)
+![Vite Badge](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=for-the-badge)
+
+### Project Info
+
+![GitHub License](https://img.shields.io/github/license/chishxd/the-verse-of-silence)
+![GitHub last commit](https://img.shields.io/github/last-commit/chishxd/the-verse-of-silence)
 
 ![Gameplay Screenshot](/static/images/gameplay-screenshot.png)
 
-Made For HackClub's Siege Hackathon's Week 6 Theme **"Magic"**
+**Siege Hackathon Week 6 - Theme: "Magic"**
+
+</div>
+
+---
 
 ## The Concept
 
@@ -42,7 +59,7 @@ In-Depth Instructions can be found [here](./INSTRUCTIONS.md)
 ## Tech Stack
 
 - **Framework:** SvelteKit 5
-- **Styling:** Tailwind CSS 4
+- **Styling:** Tailwind CSS v4.1
 - **Game Logic:** Pure, UI-agnostic JavaScript with JSDoc for type safety.
 - **Deployment:** Vercel
 
