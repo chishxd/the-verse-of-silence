@@ -4,7 +4,7 @@
 	import { spellbook } from '$lib/spellbook';
 
 	let heldItem = null; //Stores the first item dropped in altar
-	let feedbackMessage = 'Weave the Echoes....';
+	let feedbackMessage = 'Drag an echo from your inventory here...';
 
 	function handleOnDrop(event) {
 		event.preventDefault();
@@ -45,7 +45,7 @@
 		});
 		feedbackMessage = `Success! You have woven '${newSpellName}'!`;
 
-		// To reset heldItem and feedback messagge to default
+		// To reset heldItem and feedback message to default
 		setTimeout(() => {
 			heldItem = null;
 			feedbackMessage = 'Weave the Echoes...';

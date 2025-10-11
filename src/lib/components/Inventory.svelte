@@ -11,6 +11,8 @@
 	 * The key is the item's name.
 	 */
 	let { items = {} } = $props();
+
+	let shouldGlow = $derived(Object.keys(items).length <= 5);
 </script>
 
 <section
@@ -22,6 +24,7 @@
 			role="group"
 			class="pixel-frame frame-amber flex cursor-grab items-center justify-start bg-transparent p-2 transition-transform hover:scale-110 active:cursor-grabbing"
 			draggable="true"
+			class:animate-pulse-glow={shouldGlow}
 			ondragstart={(event) => {
 				event.dataTransfer.setData('text/plain', name);
 			}}

@@ -37,7 +37,10 @@
 					</div>
 
 					<div class="w-1/3">
-						<Inventory items={$gameState.inventory} />
+						<Inventory
+							items={$gameState.inventory}
+							class={$gameState.inventory.length <= 5 ? 'animate-pulse-glow' : ''}
+						/>
 					</div>
 				</div>
 			</div>

@@ -30,11 +30,41 @@
 	.frame-wood {
 		--frame-color: theme('colors.yellow.700');
 	}
-	@layer utilities {
-		.text-glow {
-			text-shadow:
-				0 0 1px theme('colors.amber.200'),
-				0 0 2px theme('colors.amber.200');
+}
+
+@layer utilities {
+	.text-glow {
+		text-shadow:
+			0 0 1px theme('colors.amber.200'),
+			0 0 2px theme('colors.amber.200');
+	}
+
+	@keyframes glow-text {
+		0%,
+		100% {
+			opacity: 1;
+			filter: brightness(1);
 		}
+		50% {
+			opacity: 0.8;
+			filter: brightness(1.2);
+		}
+	}
+
+	.animate-glow {
+		animation: glow-text 2s ease-in-out infinite;
+	}
+
+	@keyframes pulse-glow {
+		0%,
+		100% {
+			filter: drop-shadow(0 0 8px theme('colors.amber.400 / 0%'));
+		}
+		50% {
+			filter: drop-shadow(0 0 8px theme('colors.amber.400 / 50%'));
+		}
+	}
+	.animate-pulse-glow {
+		animation: pulse-glow 1.5s infinite ease-in-out;
 	}
 }

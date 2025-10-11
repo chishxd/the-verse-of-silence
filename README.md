@@ -12,7 +12,7 @@
 
 ![Gameplay Screenshot](/static/images/gameplay-screenshot.png)
 
-Made For HackClub's Siege Hacakathin's Week 6 Theme **"Magic"**
+Made For HackClub's Siege Hackathon's Week 6 Theme **"Magic"**
 
 ## The Concept
 
