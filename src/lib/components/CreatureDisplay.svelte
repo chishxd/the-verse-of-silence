@@ -56,7 +56,7 @@
 
 		<div>
 			<h2 class="font-pixel text-xl font-bold text-amber-400">{creature.name}</h2>
-			<p class="mt-2 font-almendra text-2xl break-words text-gray-300">
+			<p class="mt-2 font-almendra text-xl break-words text-gray-300">
 				{creature.description}
 			</p>
 		</div>

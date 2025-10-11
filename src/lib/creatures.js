@@ -19,7 +19,8 @@ export const creatures = {
 	Glimmerkin: {
 		name: 'Glimmerkin',
 		image: '/assets/creatures/glimmerkin.png',
-		description: 'A small, crystalline creature that hums a soft tune...',
+		description:
+			'Do not be deceived by the Silence. The true Verse still lingers, and its last pure note is hummed by the Glimmerkin. To harm one is to tear another hole in the fabric of the world',
 		vulnerabilities: ['light']
 	}
 };
