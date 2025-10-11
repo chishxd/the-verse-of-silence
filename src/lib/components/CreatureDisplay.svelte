@@ -6,17 +6,24 @@
 	const { creature } = $props();
 
 	function handleDrop(event) {
+		event.preventDefault();
+
 		const droppedItem = event.dataTransfer.getData('text/plain');
 		let feedbackMessage = `Echo the Waves....`;
+
 		if (!(droppedItem in spellbook)) {
 			feedbackMessage = `Nothing Happened...`;
 			return;
 		}
 		const outcome = useSpell(droppedItem, creature.name);
 		console.log(`Used '${droppedItem}', outcome: ${outcome}`); //DEBUGGING
-		if (outcome === 'NO_EFFECT') {
-			$gameState.victoryState = outcome;
-		}
+
+		gameState.update((state) => {
+			return {
+				...state,
+				victoryState: outcome
+			};
+		});
 	}
 </script>
 

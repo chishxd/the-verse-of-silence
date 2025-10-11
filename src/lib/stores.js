@@ -6,10 +6,10 @@ import { elements } from './elements';
  *
  * @typedef {Object} GameState
  * @property {Object.<string, Element>} inventory - The player's inventory, containing all available elements.
- * @property {'playing' | 'merciful' | 'forceful'} victoryState - The current state of the game.
+ * @property {'PLAYING' | 'MERCIFUL_VICTORY' | 'FORCEFUL_VICTORY'} victoryState - The current state of the game.
  */
 
 export const gameState = writable({
 	inventory: elements,
-	victoryState: 'playing'
+	victoryState: 'PLAYING'
 });

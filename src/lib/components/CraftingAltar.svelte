@@ -17,17 +17,17 @@
 			heldItem = droppedItem;
 			feedbackMessage = `Dropped ${heldItem} to Altar, add another echo...`;
 
-			setTimeout(() => {
-				heldItem = null;
-				feedbackMessage = 'Weave the Echoes...';
-			}, 3000);
-
 			return;
 		}
 		const newSpellName = combine(heldItem, droppedItem);
 
 		if (!newSpellName) {
 			feedbackMessage = 'The echoes repel each other. This combination is not possible.';
+			heldItem = null;
+			setTimeout(() => {
+				heldItem = null;
+				feedbackMessage = 'Weave the Echoes...';
+			}, 3000);
 			return;
 		}
 
@@ -35,8 +35,13 @@
 
 		// Use the function syntax for updating the store to ensure reactivity
 		gameState.update((currentState) => {
-			currentState.inventory[newSpellName] = spellbook[newSpellName];
-			return currentState;
+			return {
+				...currentState,
+				inventory: {
+					...currentState.inventory,
+					[newSpellName]: spellbook[newSpellName]
+				}
+			};
 		});
 		feedbackMessage = `Success! You have woven '${newSpellName}'!`;
 
