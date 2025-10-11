@@ -22,6 +22,7 @@
 
 		if (!newSpellName) {
 			feedbackMessage = 'The echoes repel each other. This combination is not possible.';
+			return;
 		}
 
 		const newSpellData = spellbook[newSpellName];
@@ -43,7 +44,7 @@
 
 <div
 	role="group"
-	class="pixel-frame frame-wood mb-5 flex h-64 w-full items-center justify-center p-4"
+	class="pixel-frame frame-wood mb-5 flex h-full w-full items-center justify-center p-4"
 	ondragover={(event) => {
 		event.preventDefault();
 	}}

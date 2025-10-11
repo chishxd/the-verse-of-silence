@@ -24,12 +24,19 @@
 		class="flex min-h-screen flex-col items-center justify-between p-4 font-serif text-white sm:p-8"
 	>
 		<!-- The container for game (So that game doesn't get "too wide" on wide screens) -->
-		<div class="mx-auto flex w-full max-w-4xl flex-col gap-8">
+		<div class="flex min-h-screen w-full max-w-4xl flex-col gap-4">
 			<!-- CraftingAltar, CreatureDisplay and Inventory goes here -->
 			<CreatureDisplay creature={glimmerkin} />
-		</div>
 
-		<CraftingAltar />
-		<Inventory items={$gameState.inventory} />
+			<div class="flex gap-6">
+				<div class="mb-2 flex w-2/3">
+					<CraftingAltar />
+				</div>
+
+				<div class="w-1/3">
+					<Inventory items={$gameState.inventory} />
+				</div>
+			</div>
+		</div>
 	</main>
 </div>
