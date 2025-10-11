@@ -46,7 +46,7 @@
 <div class="relative w-full">
 	<section
 		role="group"
-		class="pixel-frame frame-creature flex w-full flex-row border border-gray-700 bg-transparent p-6 backdrop-blur-lg"
+		class="pixel-frame frame-creature flex w-full flex-row border border-gray-700 bg-[#4d5663d3] p-6 backdrop-blur-lg"
 		ondragover={(event) => {
 			event.preventDefault();
 		}}

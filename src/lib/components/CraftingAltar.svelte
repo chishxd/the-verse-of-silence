@@ -55,7 +55,7 @@
 
 <div
 	role="group"
-	class="pixel-frame frame-wood mb-5 flex h-full w-full items-center justify-center bg-transparent p-4 backdrop-blur-lg"
+	class="pixel-frame frame-wood mb-5 flex h-full w-full items-center justify-center bg-[#4d566386] p-4 backdrop-blur-lg"
 	ondragover={(event) => {
 		event.preventDefault();
 	}}

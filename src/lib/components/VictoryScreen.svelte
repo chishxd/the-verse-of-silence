@@ -1,7 +1,17 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { gameState } from '$lib/stores';
+	import { elements } from '$lib/elements';
 	let { outcome } = $props();
+
+	// Updates gameState
+	function playAgain() {
+		gameState.set({
+			inventory: elements,
+			victoryState: 'PLAYING'
+		});
+	}
 </script>
 
 <div class="flex min-h-screen items-center justify-center p-8">
@@ -22,6 +32,12 @@
 					"A faint, harmonious note resonates within you. The Verse finds your methods...
 					intriguing."
 				</p>
+				<button
+					class="pixel-frame frame-amber mt-8 px-6 py-2 font-pixel text-lg transition-colors hover:bg-amber-400 hover:text-stone-900"
+					onclick={playAgain}
+				>
+					Play Again
+				</button>
 			</div>
 		{:else if outcome === 'FORCEFUL_VICTORY'}
 			<div class="space-y-6 text-center">
@@ -45,6 +61,12 @@
 					"A deep, powerful note rings in the silence. The Verse recognizes your strength... and
 					yearns for more."
 				</p>
+				<button
+					class="pixel-frame frame-amber mt-8 px-6 py-2 font-pixel text-lg transition-colors hover:bg-amber-400 hover:text-stone-900"
+					onclick={playAgain}
+				>
+					Play Again
+				</button>
 			</div>
 		{/if}
 	</div>

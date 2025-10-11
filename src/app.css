@@ -25,7 +25,7 @@
 		--frame-color: theme('colors.stone.600');
 	}
 	.frame-creature {
-		--frame-color: theme('colors.blue.500');
+		--frame-color: theme('colors.sky.600');
 	}
 	.frame-wood {
 		--frame-color: theme('colors.yellow.700');
