@@ -9,6 +9,7 @@
 	import CraftingAltar from '$lib/components/CraftingAltar.svelte';
 	import { elements } from '$lib/elements';
 	import { creatures } from '$lib/creatures';
+	import { gameState } from '$lib/stores';
 
 	const glimmerkin = creatures['Glimmerkin'];
 </script>
@@ -29,6 +30,6 @@
 		</div>
 
 		<CraftingAltar />
-		<Inventory items={elements} />
+		<Inventory items={$gameState.inventory} />
 	</main>
 </div>
