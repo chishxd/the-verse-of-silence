@@ -15,11 +15,12 @@
 					Path of Wisdom
 				</h1>
 				<p class="font-almendra text-2xl leading-relaxed text-gray-200">
-					You calmed the Glimmerkin with a harmless flash of light. It blinks, confused but
-					unharmed, then scurries into the shadows, revealing the path forward.
+					With a harmless flash of woven light, you outsmart the timid creature. It scurries into
+					the shadows, revealing the path. You chose intellect over force.
 				</p>
 				<p class="font-serif text-lg text-cyan-300 italic">
-					"You chose intellect over force. The echoes remember your mercy."
+					"A faint, harmonious note resonates within you. The Verse finds your methods...
+					intriguing."
 				</p>
 			</div>
 		{:else if outcome === 'FORCEFUL_VICTORY'}
@@ -36,11 +37,13 @@
 					Path of Power
 				</h1>
 				<p class="font-almendra text-2xl leading-relaxed text-gray-200">
-					Your jagged shard pierces the creature's fragile form. The Glimmerkin dissolves into
-					shimmering dust, its soft hum silenced forever. The path is clear.
+					You answered the creature's fear with a decisive, piercing strike. The echo you wove was
+					too powerful for it to withstand, and it dissolved into pure energy. The path is clear.
+					Your strength is undeniable.
 				</p>
 				<p class="font-serif text-lg text-red-300 italic">
-					"You chose power over restraint. The echoes remember your violence."
+					"A deep, powerful note rings in the silence. The Verse recognizes your strength... and
+					yearns for more."
 				</p>
 			</div>
 		{/if}
