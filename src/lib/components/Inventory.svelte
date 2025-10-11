@@ -24,7 +24,7 @@
 			role="group"
 			class="pixel-frame frame-amber flex cursor-grab items-center justify-start bg-transparent p-2 transition-transform hover:scale-110 active:cursor-grabbing"
 			draggable="true"
-			class:animate-pulse-glow={shouldGlow}
+			class:animate-inventory-glow={shouldGlow}
 			ondragstart={(event) => {
 				event.dataTransfer.setData('text/plain', name);
 			}}

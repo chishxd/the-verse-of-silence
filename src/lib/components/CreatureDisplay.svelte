@@ -4,10 +4,12 @@
 	import { gameState } from '$lib/stores';
 	import { fly, fade } from 'svelte/transition';
 
-	const { creature } = $props();
+	let { creature, class: className = '' } = $props();
 
 	let feedbackMessage = $state('');
 	let showFeedback = $state(false);
+
+	let shouldGlow = $derived(Object.keys($gameState.inventory).length > 5);
 
 	function handleDrop(event) {
 		event.preventDefault();
@@ -46,7 +48,8 @@
 <div class="relative w-full">
 	<section
 		role="group"
-		class="pixel-frame frame-creature flex w-full flex-row border border-gray-700 bg-[#4d5663d3] p-6 backdrop-blur-lg"
+		class="pixel-frame frame-creature flex w-full flex-row border border-gray-700 bg-[#4d5663d3] p-6 backdrop-blur-lg {className}"
+		class:animate-creature-glow={shouldGlow}
 		ondragover={(event) => {
 			event.preventDefault();
 		}}

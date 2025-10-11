@@ -58,13 +58,18 @@
 	@keyframes pulse-glow {
 		0%,
 		100% {
-			filter: drop-shadow(0 0 8px theme('colors.amber.400 / 0%'));
+			filter: drop-shadow(0 0 8px var(--frame-color, theme('colors.amber.400 / 0%')));
 		}
 		50% {
-			filter: drop-shadow(0 0 8px theme('colors.amber.400 / 50%'));
+			filter: drop-shadow(0 0 8px var(--frame-color, theme('colors.amber.400 / 50%')));
 		}
 	}
-	.animate-pulse-glow {
+	.animate-inventory-glow {
+		--frame-color: theme('colors.amber.400');
+		animation: pulse-glow 1.5s infinite ease-in-out;
+	}
+	.animate-creature-glow {
+		--frame-color: theme('colors.sky.600');
 		animation: pulse-glow 1.5s infinite ease-in-out;
 	}
 }
