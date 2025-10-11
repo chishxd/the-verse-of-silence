@@ -1,5 +1,23 @@
 <script>
+	import { useSpell } from '$lib/engine';
+	import { spellbook } from '$lib/spellbook';
+	import { gameState } from '$lib/stores';
+
 	const { creature } = $props();
+
+	function handleDrop(event) {
+		const droppedItem = event.dataTransfer.getData('text/plain');
+		let feedbackMessage = `Echo the Waves....`;
+		if (!(droppedItem in spellbook)) {
+			feedbackMessage = `Nothing Happened...`;
+			return;
+		}
+		const outcome = useSpell(droppedItem, creature.name);
+		console.log(`Used '${droppedItem}', outcome: ${outcome}`); //DEBUGGING
+		if (outcome === 'NO_EFFECT') {
+			$gameState.victoryState = outcome;
+		}
+	}
 </script>
 
 <section
@@ -8,6 +26,7 @@
 	ondragover={(event) => {
 		event.preventDefault();
 	}}
+	ondrop={handleDrop}
 >
 	<img src={creature.image} alt={creature.name} class="h-32 w-32 flex-shrink-0 object-contain" />
 
