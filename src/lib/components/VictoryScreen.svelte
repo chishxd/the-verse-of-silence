@@ -43,16 +43,6 @@
 					"You chose power over restraint. The echoes remember your violence."
 				</p>
 			</div>
-		{:else if outcome === 'NO_EFFECT'}
-			<div class="space-y-6 text-center">
-				<div class="mb-8 text-6xl opacity-50"
-                in:fly={{ y: 50, duration: 800, easing: quintOut }}>💭</div>
-				<h1 class="font-pixel text-3xl text-gray-400">Nothing Happened</h1>
-				<p class="font-almendra text-xl text-gray-500">
-					The spell fizzles harmlessly. The Glimmerkin stares at you, unimpressed.
-				</p>
-				<p class="font-serif text-sm text-gray-600 italic">Perhaps try a different approach...</p>
-			</div>
 		{/if}
 	</div>
 </div>
