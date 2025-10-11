@@ -30,4 +30,11 @@
 	.frame-wood {
 		--frame-color: theme('colors.yellow.700');
 	}
+	@layer utilities {
+		.text-glow {
+			text-shadow:
+				0 0 1px theme('colors.amber.200'),
+				0 0 2px theme('colors.amber.200');
+		}
+	}
 }

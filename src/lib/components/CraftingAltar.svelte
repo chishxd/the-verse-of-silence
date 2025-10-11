@@ -16,6 +16,12 @@
 			//If there is no heldItem, current dropped one is held
 			heldItem = droppedItem;
 			feedbackMessage = `Dropped ${heldItem} to Altar, add another echo...`;
+
+			setTimeout(() => {
+				heldItem = null;
+				feedbackMessage = 'Weave the Echoes...';
+			}, 3000);
+
 			return;
 		}
 		const newSpellName = combine(heldItem, droppedItem);
@@ -44,11 +50,11 @@
 
 <div
 	role="group"
-	class="pixel-frame frame-wood mb-5 flex h-full w-full items-center justify-center p-4"
+	class="pixel-frame frame-wood mb-5 flex h-full w-full items-center justify-center bg-transparent p-4 backdrop-blur-lg"
 	ondragover={(event) => {
 		event.preventDefault();
 	}}
 	ondrop={handleOnDrop}
 >
-	<p class="animate-pulse font-pixel text-gray-500/50">{feedbackMessage}</p>
+	<p class="text-glow animate-pulse font-pixel text-gray-500/50">{feedbackMessage}</p>
 </div>
