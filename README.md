@@ -37,6 +37,8 @@ Every puzzle has multiple solutions, and every choice has a consequence that rip
 4.  **Drag** your new spell from the inventory and drop it onto the Glimmerkin to see the outcome.
 5.  **Play again** to discover a different path!
 
+In-Depth Instructions can be found [here](./INSTRUCTIONS.md)
+
 ## Tech Stack
 
 - **Framework:** SvelteKit 5
