@@ -39,16 +39,27 @@
 				>
 					Play Again
 				</button>
+
+				<div class="mt-8 border-t border-stone-700 pt-6">
+					<p class="font-serif text-sm text-gray-400">
+						Thank you for playing! This is a proof-of-concept demo built in 6 days.<br />
+						Check out my
+						<a
+							href="https://chishxd.github.io/diploma-notes/Project-Related-stuff/the-verse-of-silence-dump"
+							class="text-cyan-400 underline hover:text-cyan-300"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							full lore & design document
+						</a>
+						to see where this world could go.
+					</p>
+				</div>
 			</div>
 		{:else if outcome === 'FORCEFUL_VICTORY'}
 			<audio src="/audio/forceful_victory.mp3" autoplay></audio>
-			<div class="space-y-6 text-center">
-				<div
-					class="mb-8 animate-pulse text-6xl"
-					in:fly={{ y: 50, duration: 800, easing: quintOut }}
-				>
-					⚡
-				</div>
+			<div class="space-y-6 text-center" in:fly={{ y: 50, duration: 800, easing: quintOut }}>
+				<div class="mb-8 animate-pulse text-6xl">⚡</div>
 				<h1
 					class="bg-gradient-to-r from-red-500 to-orange-400 bg-clip-text font-pixel text-4xl font-bold text-transparent"
 				>
@@ -69,6 +80,22 @@
 				>
 					Play Again
 				</button>
+
+				<div class="mt-8 border-t border-stone-700 pt-6">
+					<p class="font-serif text-sm text-gray-400">
+						Thank you for playing! This is a proof-of-concept demo built in 6 days.<br />
+						Check out my
+						<a
+							href="https://chishxd.github.io/diploma-notes/Project-Related-stuff/the-verse-of-silence-dump"
+							class="text-red-400 underline hover:text-red-300"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							full lore & design document
+						</a>
+						to see where this world could go.
+					</p>
+				</div>
 			</div>
 		{/if}
 	</div>
