@@ -8,6 +8,14 @@
 
 > _"Do not be deceived by the Silence. The true Verse still lingers, and its last pure note is hummed by the Glimmerkin."_
 
+> **Note:** This game is designed for a desktop browser experience. For the best experience, please play on a laptop or desktop computer.
+
+### Gameplay Demo
+
+If you are on a mobile device or cannot play the game(REALLY sorry for that), here is a short video demonstrating the complete gameplay loop and its branching paths:
+
+![Gameplay Demo GIF](./demo.gif)
+
 ### Made For
 
 ![Hack Club Badge](https://img.shields.io/badge/Hack%20Club-EC3750?logo=hackclub&logoColor=fff&style=for-the-badge)
