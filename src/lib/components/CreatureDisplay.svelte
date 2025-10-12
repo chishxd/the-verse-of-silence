@@ -14,7 +14,7 @@
 	function handleDrop(event) {
 		event.preventDefault();
 
-		const droppedItem = event.dataTransfer.getData('text/plain');
+		const droppedItem = event.dataTransfer.getData('application/the-verse-of-silence');
 
 		if (!(droppedItem in spellbook)) {
 			showMessage('Not a spell! Try crafting one first.');
@@ -58,7 +58,11 @@
 		<img src={creature.image} alt={creature.name} class="h-32 w-32 flex-shrink-0 object-contain" />
 
 		<div>
-			<h2 class="font-pixel text-xl font-bold text-amber-400">{creature.name}</h2>
+			<h2
+				class="bg-gradient-to-r from-blue-300 to-blue-700 bg-clip-text font-almendra text-3xl font-bold text-transparent"
+			>
+				{creature.name}
+			</h2>
 			<p class="mt-2 font-almendra text-xl break-words text-gray-300">
 				{creature.description}
 			</p>

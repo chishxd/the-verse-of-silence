@@ -13,3 +13,8 @@ export const gameState = writable({
 	inventory: elements,
 	victoryState: 'PLAYING'
 });
+
+export const dragState = writable({
+	isDragging: false,
+	draggedItemName: null
+});

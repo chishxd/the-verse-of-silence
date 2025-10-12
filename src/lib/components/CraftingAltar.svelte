@@ -12,8 +12,17 @@
 	function handleOnDrop(event) {
 		event.preventDefault();
 
-		let droppedItem = event.dataTransfer.getData('text/plain');
+		let droppedItem = event.dataTransfer.getData('application/the-verse-of-silence');
 		// console.log(`Dropped "${droppedItem}" on the Altar!`);
+
+		if (!droppedItem) {
+			feedbackMessage = "It's not a Echo, altar is laughing at you...";
+
+			setTimeout(() => {
+				feedbackMessage = 'Weave the Echoes...';
+			}, 3000);
+			return;
+		}
 
 		if (!heldItem) {
 			//If there is no heldItem, current dropped one is held
