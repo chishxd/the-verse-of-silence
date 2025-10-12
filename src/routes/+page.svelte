@@ -52,3 +52,4 @@
 		{/if}
 	</main>
 </div>
+<audio src="/audio/background.mp3" autoplay loop volume="0.025"></audio>
