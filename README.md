@@ -90,4 +90,12 @@ This project was built as a scalable foundation. Future ideas include:
 
 ---
 
+## Credits
+
+Background Music by <a href="https://pixabay.com/users/composiia-38203768/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=171842">Tell Costa</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=171842">Pixabay</a>
+
+Drag Sound Effect by <a href="https://pixabay.com/users/u_u4pf5h7zip-50459877/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=345977">u_u4pf5h7zip</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=345977">Pixabay</a>
+
+Sound Effect by <a href="https://pixabay.com/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=229208">Universfield</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=229208">Pixabay</a>
+
 Made with ❤️‍🔥 by Yours Truly.
