@@ -17,6 +17,7 @@
 <div class="flex min-h-screen items-center justify-center p-8">
 	<div class="max-w-2xl">
 		{#if outcome === 'MERCIFUL_VICTORY'}
+			<audio src="/audio/merciful_victory.mp3" autoplay></audio>
 			<div class="space-y-6 text-center" in:fly={{ y: 50, duration: 800, easing: quintOut }}>
 				<div class="mb-8 animate-pulse text-6xl">✨</div>
 				<h1
@@ -40,6 +41,7 @@
 				</button>
 			</div>
 		{:else if outcome === 'FORCEFUL_VICTORY'}
+			<audio src="/audio/forceful_victory.mp3" autoplay></audio>
 			<div class="space-y-6 text-center">
 				<div
 					class="mb-8 animate-pulse text-6xl"

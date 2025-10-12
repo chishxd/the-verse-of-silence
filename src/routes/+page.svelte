@@ -47,9 +47,9 @@
 					</div>
 				</div>
 			</div>
+			<audio src="/audio/background.mp3" autoplay loop volume="0.025"></audio>
 		{:else}
 			<VictoryScreen outcome={$gameState.victoryState} />
 		{/if}
 	</main>
 </div>
-<audio src="/audio/background.mp3" autoplay loop volume="0.025"></audio>
